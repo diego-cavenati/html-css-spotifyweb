@@ -10,7 +10,7 @@ img {
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--dark);
 }
 
@@ -155,10 +155,84 @@ nav {
     width: 230px;
     background-color: var(--dark);
     color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
+nav h3 {
+    text-transform: uppercase;
+    color: var(--light);
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
 
-/* main */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 75%;
+    fill: var(--light);
+    padding-bottom: 0.8rem;
+}
+
+.menu span {
+    font-size: 0.8rem;
+}
+
+.navigate img {
+    width: 20%;
+    fill: var(--light_dark);
+    padding-right: 0.5rem;
+}
+
+.navigate span {
+    display: flex;
+    align-items: center;
+    color: var(--light_dark);
+    padding: 0.4rem 0;
+}
+
+.new_playlist {
+    padding: 0.7rem 0;
+    color: var(--light_dark);
+    font-size: 0.9rem;  
+}
+
+.new_playlist i {
+    padding: 0.5rem 0.4rem;
+    color: var(--dark);
+    background-color: var(--light_dark);
+    font-size: 1rem;  
+    font-weight: 700;
+    margin-right: 0.4rem;
+}
+
+.playlist {
+    color: var(--light_dark);
+    padding: 0.7rem 0;
+}
+
+.profile img {
+    width: 12%;
+    background-color: var(--light_dark);
+    clip-path: circle(47%);
+    margin-right: 0.5rem;
+}
+
+.profile hr {
+    margin: 0.7rem 0;
+    color: var(--light_dark);
+}
+.user_profile {
+    display: flex;
+    align-items: center;
+}
+
+/* main contents */
 main {
     background-color: var(--primary);
     width: 100%;
@@ -172,8 +246,8 @@ main {
     background-color: rgba(0, 0, 0, 0.569);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: calc(100vw - 200px);
     display: flex;
     flex-direction: row-reverse;
 }
