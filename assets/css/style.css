@@ -148,15 +148,18 @@ button {
 
 
 /* #region media screen */
-@media screen and (max-width: 1200px) {
+/* Spotify MD */
+@media screen and (max-width: 878px) {
 
 }
 
-@media screen and (max-width: 768px) {
+/* Spotify S */
+@media screen and (max-width: 639px) {
 
 }
 
-@media screen and (max-width: 320px) {
+/* Spotify XS */
+@media screen and (max-width: 552px) {
 
 }
 /* #endregion media screen */
