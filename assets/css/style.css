@@ -76,8 +76,6 @@ button {
 .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .col-1 {
@@ -130,9 +128,15 @@ button {
 /* #endregion flex grid */
 
 /* #region button */
-.btn {
+.btn_upgrade {
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    border: 1px solid var(--light);
+    margin: 1rem;
+    color: var(--light);
+    font-size: 0.7rem;
 }
 /* #endregion button */
 
@@ -160,14 +164,96 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 
+/* claim_upgrade */
 .claim_upgrade {
     background-color: rgba(0, 0, 0, 0.569);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card {
+    text-align: center;
+    color: var(--light);
+    padding: 0.6rem;
+}
+
+.card img{
+    padding: 0.6rem 0;
+}
+
+main h2 {
+    color: var(--light);
+    font-size: 1.4rem;
+    padding-bottom: 0.4rem;
+} 
+
+main h3 {
+    color: var(--light);
+    font-size: 0.9rem;
+    padding-bottom: 0.4rem;
+    line-height: 0.9rem;
+} 
+
+main h4 {
+    color: var(--light_dark);
+    font-size: 0.75rem;
+}
+
+main p {
+    color: var(--light_dark);
+    font-size: 0.7rem;
+}
+
+main .row {
+    margin: 0 -0.7rem;
+}
+
+.top_artists, .make_for_user, .recently_played, .choiches {
+    padding: 0 1rem 1.2rem 1rem;
 }
 
 
-/* player */
+/* choices */
+.choiches {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.choiches a {
+    padding: 0 0.6rem;
+    color: var(--light_dark);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* recently played */
+
+
+
+
+
+/* make for user */
+
+
+
+
+/* top artists */
+.top_artists img {
+    clip-path: circle(46%);
+}
+
+
+
+
+
+/* player bottom */
 #player {
     background-color: var(--secondary);
     height: 100px;
@@ -195,7 +281,9 @@ main {
 
 /* Spotify XS */
 @media screen and (max-width: 552px) {
-
+    nav {
+        width: 50px;
+    }
 }
 /* #endregion media screen */
 
