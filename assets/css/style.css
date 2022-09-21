@@ -57,6 +57,10 @@ button {
 .d_flex {
     display: flex;
 }
+
+.vh-100 {
+    height: calc(100vh - 100px);
+}
 /* #endregion Utilities */
 
 /* #region flex grid */
@@ -137,15 +141,46 @@ button {
      Style page  
 *******************/
 
+/* Main */
+#main {
+    height: 100%;
+}
+
+/* navbar */
+nav {
+    width: 230px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+/* main */
+main {
+    background-color: var(--primary);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.claim_upgrade {
+    background-color: rgba(0, 0, 0, 0.569);
+}
+
+
+/* player */
+#player {
+    background-color: var(--secondary);
+    height: 100px;
+}
 
 
 
 
 
 
-
-
-
+/********************
+    End style page 
+*********************/
 
 /* #region media screen */
 /* Spotify MD */
@@ -168,4 +203,15 @@ button {
 .debug {
 
 }
+.debug #main {
+    height: 100%;
+}
+
+.debug main {
+    height: 100%;
+ }
+
+.debug nav {
+    height: 100%;
+ }
 /* #endregion debug */
