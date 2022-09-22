@@ -12,6 +12,7 @@ img {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark);
+    background-color: var(--secondary);
 }
 
 a {
@@ -61,6 +62,10 @@ button {
 .vh-100 {
     height: calc(100vh - 100px);
 }
+
+
+
+
 /* #endregion Utilities */
 
 /* #region flex grid */
@@ -196,10 +201,21 @@ nav h3 {
     padding: 0.4rem 0;
 }
 
+.playlist_user {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: calc(60vh - 100px);
+}
+
+.playlist_user::-webkit-scrollbar { 
+    display: none; // Safari and Chrome 
+}
+
 .new_playlist {
     padding: 0.7rem 0;
     color: var(--light_dark);
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
 }
 
 .new_playlist i {
@@ -235,7 +251,7 @@ nav h3 {
 .profile i {
     border: 1px solid var(--light);
     border-radius: 50%;
-    padding: 0.3rem;
+    padding: 0.2rem 0.3rem;
     margin-right: 0.5rem;
     height: 1.3rem;
     width: 1.3rem;
@@ -252,6 +268,11 @@ main {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    overflow: -moz-scrollbars-none; // Firefox 
+}
+
+main::-webkit-scrollbar { 
+    display: none; // Safari and Chrome 
 }
 
 /* claim_upgrade */
@@ -314,11 +335,19 @@ main .row {
 }
 
 .choiches a {
-    padding: 0 0.6rem;
+    padding: 0.6rem 0;
+    margin: 0 0.6rem;
     color: var(--light_dark);
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+
+.choiches a:hover{
+    border-bottom: 0.1rem solid var(--mark);
+    padding: 0.5rem 0;
+    color: var(--light);
+}
+
 
 /* recently played */
 
@@ -345,6 +374,7 @@ main .row {
     background-color: var(--secondary);
     height: 100px;
     color: var(--light);
+    z-index: 999;
 }
 
 #player .container_fluid {
