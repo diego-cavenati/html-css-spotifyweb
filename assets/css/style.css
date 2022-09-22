@@ -344,11 +344,39 @@ main .row {
 #player {
     background-color: var(--secondary);
     height: 100px;
+    color: var(--light);
 }
 
+#player .container_fluid {
+    height: 100%;
+    padding: 1rem;
+}
 
+#player .row {
+    align-items: center;
+    height: 100%;
+}
 
+.listening_to {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.listening_to .song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listening_to img {
+    width: 10%;
+    margin-right: 0.5rem;
+}
+
+.song_details {
+    
+}
 
 
 /********************
