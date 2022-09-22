@@ -227,11 +227,24 @@ nav h3 {
     margin: 0.7rem 0;
     color: var(--light_dark);
 }
+
+.profile span {
+    font-size: 0.8rem;
+}
+
+.profile i {
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
 .user_profile {
     display: flex;
     align-items: center;
 }
-
 /* main contents */
 main {
     background-color: var(--primary);
