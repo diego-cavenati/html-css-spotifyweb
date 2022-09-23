@@ -62,10 +62,6 @@ button {
 .vh-100 {
     height: calc(100vh - 100px);
 }
-
-
-
-
 /* #endregion Utilities */
 
 /* #region flex grid */
@@ -143,6 +139,10 @@ button {
     color: var(--light);
     font-size: 0.7rem;
 }
+
+.btn_upgrade:hover {
+    transform: scale(1.07,1.07);
+}
 /* #endregion button */
 
 
@@ -184,21 +184,41 @@ nav h3 {
     padding-bottom: 0.8rem;
 }
 
-.menu span {
+.menu a {
     font-size: 0.8rem;
 }
 
-.navigate img {
+.navigate > a img {
     width: 20%;
-    fill: var(--light_dark);
     padding-right: 0.5rem;
+    filter: invert(50%);
 }
 
-.navigate span {
+.navigate a {
     display: flex;
     align-items: center;
     color: var(--light_dark);
     padding: 0.4rem 0;
+}
+
+.navigate a:first-child {
+    border-left: 0.1rem solid var(--mark);
+    padding-left: 0.9rem;
+    margin-left: -1rem;
+}
+
+
+.navigate a:first-child, .navigate > a:first-child img{
+    filter: invert(0);
+    color: var(--light);
+}
+
+.navigate a:hover {
+    color: var(--light);
+}
+
+.navigate > a:hover img {
+    filter: invert(0);
 }
 
 .playlist_user {
@@ -227,9 +247,21 @@ nav h3 {
     margin-right: 0.4rem;
 }
 
+.new_playlist:hover {
+    color: var(--light);
+}
+
+.new_playlist:hover i {
+    background-color: var(--light);
+}
+
 .playlist {
     color: var(--light_dark);
     padding: 0.7rem 0;
+}
+
+.playlist:hover {
+    color: var(--light);
 }
 
 .profile img {
@@ -363,10 +395,12 @@ main .row {
 /* choices */
 .choiches {
     padding-top: 80px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
-.choiches a {
+.choiches a, .active_choice {
     padding: 0.6rem 0;
     margin: 0 0.6rem;
     color: var(--light_dark);
@@ -374,32 +408,24 @@ main .row {
     font-size: 0.8rem;
 }
 
-.choiches a:hover{
-    border-bottom: 0.1rem solid var(--mark);
-    padding: 0.5rem 0;
+.choiches a:first-child {
+    padding: 0.5rem 0 0.1rem 0;
     color: var(--light);
 }
 
+.choiches hr {
+    margin: 0 auto 0.4rem auto;
+    width: 40%;
+    border-color: var(--mark);
+}
 
-/* recently played */
+.choiches a:hover{
+    color: var(--light);
+}
 
-
-
-
-
-/* make for user */
-
-
-
-
-/* top artists */
 .top_artists img {
     clip-path: circle(46%);
 }
-
-
-
-
 
 /* player bottom */
 #player {
@@ -436,9 +462,13 @@ main .row {
     margin-bottom: -0.3rem;
 }
 
-.song_details span {
+.song_details a {
     font-size: 0.7rem;
     color: var(--light_dark);
+}
+
+.song_details a:hover {
+    text-decoration: underline;
 }
 
 .top_controls {
@@ -468,11 +498,32 @@ main .row {
     padding: 0 1rem;
 }
 
+.hover_circle {
+    background-color: var(--light);
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.time:hover .current, .volume:hover .current {
+    background-color: var(--mark);
+}
+
+.time:hover .hover_circle, .volume:hover .hover_circle {
+    display: inline-block;
+}
+
 .current {
     height: 4px;
     background-color: var(--light);
     width: 40%;
     border-radius: 2px;
+    position: relative;
 }
 
 .remaining {

@@ -25,33 +25,33 @@
                 <div class="menu">
                     <img class="logo" src="./assets/img/logo.svg" alt="">
                     <div class="navigate">
-                        <span>
+                        <a>
                             <img src="./assets/img/home.svg" alt="">
                             Home
-                        </span>
-                        <span>
+                        </a>
+                        <a>
                             <img src="./assets/img/search.svg" alt="">
                             Cerca
-                        </span>
-                        <span>
+                        </a>
+                        <a>
                             <img src="./assets/img/libreria.svg" alt="">
                             La tua libreria
-                        </span>
+                        </a>
                     </div>
                     <h3>Playlist</h3>
 
                     <div class="playlist_user">
-                        <span class="new_playlist">
+                        <a class="new_playlist">
                             <i class="fa-solid fa-plus"></i>
                             Crea Playlist
-                        </span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
-                        <span class="playlist">Nome Playlist</span>
+                        </a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
+                        <a class="playlist">Nome Playlist</a>
                     </div>
                 </div>
                 <div class="profile">
@@ -77,7 +77,12 @@
 
                 <!-- menu choiches -->
                 <div class="choiches">
-                    <a href="#">In evidenza</a>
+                    <span class="active_choice">
+                        <a href="#">
+                            In evidenza
+                        </a>
+                        <hr>
+                    </span>
                     <a href="#">podcast</a>
                     <a href="#">classifiche</a>
                     <a href="#">generi e mood</a>
@@ -264,7 +269,7 @@
                         <img src="./assets/img/sinister.jpeg" alt="">
                         <div class="song_details">
                             <h3>Sinister</h3>
-                            <span>Brano nome</span>
+                            <a>Brano nome</a>
                         </div>
                         <div class="save">
                             <i class="fa-regular fa-heart"></i>
@@ -284,7 +289,9 @@
                     <div class="bottom_controls center">
                         <span>0:25</span>
                         <div class="time">
-                            <div class="current"></div>
+                            <div class="current">
+                                <div class="hover_circle"></div>
+                            </div>
                             <div class="remaining"></div>
                         </div>
                         <span>4:35</span>
