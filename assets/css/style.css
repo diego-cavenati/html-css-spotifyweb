@@ -173,6 +173,7 @@ nav {
     justify-content: space-between;
     padding: 1rem;
     height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 nav h3 {
