@@ -152,7 +152,7 @@ button {
 
 /* Main */
 #main {
-    height: 100%;
+    height: 100%
 }
 
 .top_page {
@@ -172,6 +172,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    height: calc(100vh - 100px);
 }
 
 nav h3 {
@@ -310,6 +311,7 @@ main {
     flex-direction: column;
     overflow: scroll;
     overflow: -moz-scrollbars-none;
+    height: calc(100vh - 100px);
 }
 
 main::-webkit-scrollbar { 
@@ -325,6 +327,7 @@ main::-webkit-scrollbar {
     width: calc(100vw - 230px);
     display: flex;
     flex-direction: row-reverse;
+    z-index: 999;
 }
 
 .card {
