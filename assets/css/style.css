@@ -193,6 +193,10 @@ nav h3 {
     padding-bottom: 0.8rem;
 }
 
+.logo_mobile {
+    display: none;
+}
+
 .menu a {
     font-size: 0.8rem;
 }
@@ -408,6 +412,7 @@ main .row {
 .choiches {
     padding-top: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
 }
@@ -596,8 +601,56 @@ main .row {
 @media screen and (max-width: 552px) {
     nav {
         width: 50px;
+        padding: 0.7rem;
+    }
+    .logo_mobile {
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+    main {
+        width: calc(100vw - 50px);
+    }
+    .claim_upgrade {
+        width: calc(100vw - 50px);
+    }
+    .logo, 
+    .menu h3, 
+    .playlist_user, 
+    .profile span, 
+    .profile hr, 
+    .voice_navigate,
+    .user_name,
+    .listening_to img,
+    .fa-bars, 
+    .fa-display, 
+    .fa-folder {
+        display: none;
+    }
+    .profile img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .navigate > a img {
+        width: 100%;
+        padding-right: 0;
+    }
+    .song_controls {
+        padding: 0 1.2rem;
     }
 }
+
+/* Spotify xs heigthk */
+@media screen and (max-height: 400px) {
+    .claim_upgrade {
+        width: calc(100vw - 50px);
+        display: none;
+    }
+    .choiches {
+        padding-top: 1rem;
+    }
+}
+
+
 /* #endregion media screen */
 
 /* #region debug */
