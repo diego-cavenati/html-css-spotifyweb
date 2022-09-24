@@ -309,9 +309,9 @@ nav h3 {
 }
 
 /* main contents */
-main {
+.explore_music {
     background-color: var(--primary);
-    width: calc(100vw - 230px);
+    width: calc(100% - 230px);
     display: flex;
     flex-direction: column;
     overflow: scroll;
@@ -319,7 +319,7 @@ main {
     height: calc(100vh - 100px);
 }
 
-main::-webkit-scrollbar { 
+.explore_music::-webkit-scrollbar { 
     display: none;
 }
 
@@ -377,30 +377,30 @@ main::-webkit-scrollbar {
 }
 
 
-main h2 {
+.explore_music h2 {
     color: var(--light);
     font-size: 1.4rem;
     padding-bottom: 0.4rem;
 } 
 
-main h3 {
+.explore_music h3 {
     color: var(--light);
     font-size: 0.9rem;
     padding-bottom: 0.4rem;
     line-height: 0.9rem;
 } 
 
-main h4 {
+.explore_music h4 {
     color: var(--light_dark);
     font-size: 0.75rem;
 }
 
-main p {
+.explore_music p {
     color: var(--light_dark);
     font-size: 0.7rem;
 }
 
-main .row {
+.explore_music .row {
     margin: 0 -0.7rem;
 }
 
@@ -608,8 +608,8 @@ main .row {
         display: inline-block;
         padding-bottom: 0.5rem;
     }
-    main {
-        width: calc(100vw - 50px);
+    .explore_music {
+        width: calc(100% - 50px);
     }
     .claim_upgrade {
         width: calc(100vw - 50px);
